@@ -1,0 +1,81 @@
+digraph history {
+graph [nodesep=1.5, ranksep=1.5];
+0 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="Grid = \{(1\|-\>1),(1\|-\>2),(1\|-\>3),(1\|-\>4),(1\|-\>5),(2\|-\>1),(2\|-\>2),(2\|-\>3),(2\|-\>4),(2\|-\>5),(3\|-\>1),(3\|-\>2),(3\|-\>3),(3\|-\>4),(3\|-\>5),(4\|-\>1),(4\|-\>2),(4\|-\>3),(4\|-\>4),(4\|-\>5),(5\|-\>1),(5\|-\>2),(5\|-\>3),(5\|-\>4),(5\|-\>5),(6\|-\>1),(6\|-\>2),(6\|-\>3),(6\|-\>4),(6\|-\>5),(7\|-\>1),(7\|-\>2),(7\|-\>3),(7\|-\>4),(7\|-\>5)\},Internal_wall = \{(1\|-\>3),(2\|-\>1),(2\|-\>3),(2\|-\>5),(3\|-\>3),(4\|-\>2),(4\|-\>3),(4\|-\>4),(6\|-\>1),(6\|-\>2),(6\|-\>4),(7\|-\>4)\},Entrance_squar = (1\|-\>1),\nExit_squar = (1\|-\>5),X_range = \{1,2,3,4,5,6,7\},Y_range = \{1,2,3,4,5\}"];
+
+1 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 1,yy = 1,route = []"];
+
+2 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 1,yy = 2,route(1) = (1\|-\>1)"];
+
+4 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 2,yy = 2,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2)"];
+
+5 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 3,yy = 2,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2)"];
+
+7 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 3,yy = 1,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2),route(4) = (3\|-\>2)"];
+
+10 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 4,yy = 1,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2),route(4) = (3\|-\>2),\nroute(5) = (3\|-\>1)"];
+
+11 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="repeated (3)\nxx = 5,yy = 1,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2),route(4) = (3\|-\>2),\nroute(5) = (3\|-\>1),route(6) = (4\|-\>1)"];
+
+13 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 5,yy = 2,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2),route(4) = (3\|-\>2),\nroute(5) = (3\|-\>1),route(6) = (4\|-\>1),route(7) = (5\|-\>1)"];
+
+15 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 5,yy = 3,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2),route(4) = (3\|-\>2),\nroute(5) = (3\|-\>1),route(6) = (4\|-\>1),route(7) = (5\|-\>1),\nroute(8) = (5\|-\>2)"];
+
+17 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 5,yy = 4,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2),route(4) = (3\|-\>2),\nroute(5) = (3\|-\>1),route(6) = (4\|-\>1),route(7) = (5\|-\>1),\nroute(8) = (5\|-\>2),route(9) = (5\|-\>3)"];
+
+20 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 5,yy = 5,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2),route(4) = (3\|-\>2),\nroute(5) = (3\|-\>1),route(6) = (4\|-\>1),route(7) = (5\|-\>1),\nroute(8) = (5\|-\>2),route(9) = (5\|-\>3),route(10) = (5\|-\>4)"];
+
+24 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 4,yy = 5,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2),route(4) = (3\|-\>2),\nroute(5) = (3\|-\>1),route(6) = (4\|-\>1),route(7) = (5\|-\>1),\nroute(8) = (5\|-\>2),route(9) = (5\|-\>3),route(10) = (5\|-\>4),\nroute(11) = (5\|-\>5)"];
+
+26 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 3,yy = 5,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2),route(4) = (3\|-\>2),\nroute(5) = (3\|-\>1),route(6) = (4\|-\>1),route(7) = (5\|-\>1),\nroute(8) = (5\|-\>2),route(9) = (5\|-\>3),route(10) = (5\|-\>4),\nroute(11) = (5\|-\>5),route(12) = (4\|-\>5)"];
+
+27 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 3,yy = 4,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2),route(4) = (3\|-\>2),\nroute(5) = (3\|-\>1),route(6) = (4\|-\>1),route(7) = (5\|-\>1),\nroute(8) = (5\|-\>2),route(9) = (5\|-\>3),route(10) = (5\|-\>4),\nroute(11) = (5\|-\>5),route(12) = (4\|-\>5),route(13) = (3\|-\>5)"];
+
+30 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 2,yy = 4,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2),route(4) = (3\|-\>2),\nroute(5) = (3\|-\>1),route(6) = (4\|-\>1),route(7) = (5\|-\>1),\nroute(8) = (5\|-\>2),route(9) = (5\|-\>3),route(10) = (5\|-\>4),\nroute(11) = (5\|-\>5),route(12) = (4\|-\>5),route(13) = (3\|-\>5),\nroute(14) = (3\|-\>4)"];
+
+32 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="xx = 1,yy = 4,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2),route(4) = (3\|-\>2),\nroute(5) = (3\|-\>1),route(6) = (4\|-\>1),route(7) = (5\|-\>1),\nroute(8) = (5\|-\>2),route(9) = (5\|-\>3),route(10) = (5\|-\>4),\nroute(11) = (5\|-\>5),route(12) = (4\|-\>5),route(13) = (3\|-\>5),\nroute(14) = (3\|-\>4),route(15) = (2\|-\>4)"];
+
+33 [shape=doubleoctagon, color="#99BF38", fontsize=12, penwidth=2, label="repeated (3)\nxx = 1,yy = 5,route(1) = (1\|-\>1),\nroute(2) = (1\|-\>2),route(3) = (2\|-\>2),route(4) = (3\|-\>2),\nroute(5) = (3\|-\>1),route(6) = (4\|-\>1),route(7) = (5\|-\>1),\nroute(8) = (5\|-\>2),route(9) = (5\|-\>3),route(10) = (5\|-\>4),\nroute(11) = (5\|-\>5),route(12) = (4\|-\>5),route(13) = (3\|-\>5),\nroute(14) = (3\|-\>4),route(15) = (2\|-\>4),route(16) = (1\|-\>4)"];
+
+root [shape=invtriangle, color="#99BF38", fontsize=12, penwidth=2, label="root"];
+
+root -> 0 [style = dotted, color = black, label="SETUP_CONSTANTS", fontsize=12];
+
+0 -> 1 [color = "#006391", label="INITIALISATION", fontsize=12];
+
+1 -> 2 [color = "#006391", label="move(North)--\>MovedNorth", fontsize=12];
+
+2 -> 4 [color = "#006391", label="move(East)--\>MovedEast", fontsize=12];
+
+4 -> 5 [color = "#006391", label="move(East)--\>MovedEast", fontsize=12];
+
+5 -> 7 [color = "#006391", label="move(South)--\>MovedSouth", fontsize=12];
+
+7 -> 10 [color = "#006391", label="move(East)--\>MovedEast", fontsize=12];
+
+10 -> 11 [color = "#006391", label="move(East)--\>MovedEast", fontsize=12];
+
+
+
+11 -> 13 [color = "#006391", label="move(North)--\>MovedNorth", fontsize=12];
+
+13 -> 15 [color = "#006391", label="move(North)--\>MovedNorth", fontsize=12];
+
+15 -> 17 [color = "#006391", label="move(North)--\>MovedNorth", fontsize=12];
+
+17 -> 20 [color = "#006391", label="move(North)--\>MovedNorth", fontsize=12];
+
+20 -> 24 [color = "#006391", label="move(West)--\>MovedWest", fontsize=12];
+
+24 -> 26 [color = "#006391", label="move(West)--\>MovedWest", fontsize=12];
+
+26 -> 27 [color = "#006391", label="move(South)--\>MovedSouth", fontsize=12];
+
+27 -> 30 [color = "#006391", label="move(West)--\>MovedWest", fontsize=12];
+
+30 -> 32 [color = "#006391", label="move(West)--\>MovedWest", fontsize=12];
+
+32 -> 33 [color = "#006391", label="move(North)--\>MovedNorth", fontsize=12];
+
+
+
+}
